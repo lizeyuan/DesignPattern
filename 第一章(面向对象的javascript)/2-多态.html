@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+    //多态： 同一操作作用于不同的对象上面，可以产生不同的执行结果
+    //多态：将不变的事物与可变的事物分隔开来
+    var makeSound = function(animal){
+         animal.sound();
+    }
+
+    var Duck = function(){};
+    Duck.prototype.sound = function(){
+        console.log("嘎嘎嘎");
+    }
+
+    var Chicken = function(){};
+    Chicken.prototype.sound = function(){
+        console.log("咯咯咯");
+    }
+
+
+</script>
+</html>
