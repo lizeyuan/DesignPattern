@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+     //可以把任意对象传入push方法：
+     // 前提： 对象可以存取属性; 对象的length属性可读写
+
+     var func = function(){
+           console.log(arguments)
+           arguments[0] = 1;
+           console.log(arguments)
+           arguments.length = 1
+           console.log(arguments.length)
+
+     };
+
+     func()
+
+   //  Array.prototype.push.call(func,1);
+</script>
+</html>

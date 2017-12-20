@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a996a55b-c3ef-4f6b-9638-a2d742234663" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/第一章(面向对象的javascript)/4-javascript中的原型继承.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/第二章(this,call,apply)/1-this用在构造器中.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/第二章(this,call,apply)/2-bind方法的实现.html" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/第二章(this,call,apply)/3-bind方法的实现(传入一些额外参数).html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/第二章(this,call,apply)/4-可以把“任意”对象传入数组方法.html" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/第一章(面向对象的javascript)/3-封装数据.html" afterPath="$PROJECT_DIR$/第一章(面向对象的javascript)/3-封装数据.html" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -55,11 +51,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="3-bind方法的实现(传入一些额外参数).html" pinned="false" current-in-tab="true">
+      <file leaf-file-name="3-bind方法的实现(传入一些额外参数).html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/第二章(this,call,apply)/3-bind方法的实现(传入一些额外参数).html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+            <state relative-caret-position="440">
+              <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="4-可以把“任意”对象传入数组方法.html" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/第二章(this,call,apply)/4-可以把“任意”对象传入数组方法.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="656">
+              <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
               <folding />
             </state>
           </provider>
@@ -80,6 +86,7 @@
         <option value="$PROJECT_DIR$/第二章(this,call,apply)/1-this用在构造器中.html" />
         <option value="$PROJECT_DIR$/第二章(this,call,apply)/2-bind方法的实现.html" />
         <option value="$PROJECT_DIR$/第二章(this,call,apply)/3-bind方法的实现(传入一些额外参数).html" />
+        <option value="$PROJECT_DIR$/第二章(this,call,apply)/4-可以把“任意”对象传入数组方法.html" />
       </list>
     </option>
   </component>
@@ -152,10 +159,7 @@
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
     <property name="HbShouldOpenHtmlAsHb" value="" />
   </component>
-  <component name="RunManager" selected="JavaScript Debug.3-bind方法的实现(传入一些额外参数).html">
-    <configuration default="false" name="1-鸭子类型.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/DesignPattern/第一章(面向对象的javascript)/1-鸭子类型.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.4-可以把“任意”对象传入数组方法.html">
     <configuration default="false" name="4-javascript中的原型继承.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/DesignPattern/第一章(面向对象的javascript)/4-javascript中的原型继承.html">
       <method />
     </configuration>
@@ -166,6 +170,9 @@
       <method />
     </configuration>
     <configuration default="false" name="3-bind方法的实现(传入一些额外参数).html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/DesignPattern/第二章(this,call,apply)/3-bind方法的实现(传入一些额外参数).html">
+      <method />
+    </configuration>
+    <configuration default="false" name="4-可以把“任意”对象传入数组方法.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/DesignPattern/第二章(this,call,apply)/4-可以把“任意”对象传入数组方法.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -228,19 +235,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.1-鸭子类型.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.4-javascript中的原型继承.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.1-this用在构造器中.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.2-bind方法的实现.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.3-bind方法的实现(传入一些额外参数).html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.4-javascript中的原型继承.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.1-this用在构造器中.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.2-bind方法的实现.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.3-bind方法的实现(传入一些额外参数).html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.4-可以把“任意”对象传入数组方法.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.3-bind方法的实现(传入一些额外参数).html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.2-bind方法的实现.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.1-this用在构造器中.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.4-javascript中的原型继承.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.1-鸭子类型.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.4-可以把“任意”对象传入数组方法.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.3-bind方法的实现(传入一些额外参数).html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.2-bind方法的实现.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.1-this用在构造器中.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.4-javascript中的原型继承.html" />
       </list>
     </recent_temporary>
   </component>
@@ -258,18 +265,18 @@
       <workItem from="1513235093775" duration="2782000" />
       <workItem from="1513580804250" duration="2301000" />
       <workItem from="1513651163367" duration="4504000" />
-      <workItem from="1513735009090" duration="4107000" />
+      <workItem from="1513735009090" duration="5431000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13883000" />
+    <option name="totallyTimeSpent" value="15207000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-9" y="0" width="1932" height="1048" extended-state="1" />
-    <editor active="false" />
+    <frame x="-9" y="0" width="1932" height="1048" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24973877" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -402,8 +409,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/第二章(this,call,apply)/3-bind方法的实现(传入一些额外参数).html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="24" column="26" lean-forward="false" selection-start-line="24" selection-start-column="26" selection-end-line="24" selection-end-column="26" />
+        <state relative-caret-position="440">
+          <caret line="19" column="13" lean-forward="true" selection-start-line="19" selection-start-column="13" selection-end-line="19" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/第二章(this,call,apply)/4-可以把“任意”对象传入数组方法.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="656">
+          <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
           <folding />
         </state>
       </provider>
