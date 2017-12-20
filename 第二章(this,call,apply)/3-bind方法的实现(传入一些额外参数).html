@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+      Function.prototype.bind = function(){
+            var self = this,
+                context = [].shift.call(arguments),
+                args = [].slice.call(arguments);
+            return function(){
+               return  self.apply(context,[].concat.call(args,[].slice.call(arguments)));
+            }
+      }
+
+      var obj = {name:"seven"};
+      var func = function(a,b,c,d){
+           alert([a,b,c,d]);
+      }.bind(obj,1,2);
+      func(3,4);
+
+</script>
+</html>

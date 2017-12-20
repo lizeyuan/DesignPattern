@@ -11,15 +11,18 @@
 
 </body>
 <script>
-     var myObject = (function(){
-           var _name = 'sven';
-           return {
-               getName:function(){
-                   return _name;
-               }
+     Function.prototype.bind = function(context){
+         var self = this;
+         return function(){
+             self.apply(context,arguments)
+         }
+     }
 
-           }
-     })();
+     var obj = {name:'seven'};
+     var func = function(){
+           alert(this.name)
+     }.bind(obj);
+     func();
 
 </script>
 </html>

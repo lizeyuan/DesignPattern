@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+     var MyClass = function(){
+          this.name = 'sven';
+          return {
+              age:"lzy"
+          }
+     };
+
+     //用new调用构造器的时候，会产生一个问题：
+     //如果构造器显示的返回一个对象，那么运算结果最终返回这个对象
+     //如果构造器返回一个非对象类型的数据，不会造成例子的问题
+     var obj = new MyClass();
+     console.log(obj)
+     //call和apply方法可以很好的体现javascript函数式语言特性
+</script>
+</html>

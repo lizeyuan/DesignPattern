@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+     function Person(name){
+         this.name = name;
+     }
+     Person.prototype.getName = function(){
+         return this.name;
+     }
+
+     var objectFactory = function(){
+         var obj = new Object();
+         var Constructor = [].shift.call(arguments);
+         obj.__proto__ = Constructor.prototype;
+         console.log(arguments)
+         var ret = Constructor.apply(obj,arguments);
+         return typeof ret == 'object'?ret:obj;
+     }
+
+     var a = objectFactory(Person,"lzy");
+     console.log(a.name);
+     console.log(a.getName());
+
+</script>
+</html>
