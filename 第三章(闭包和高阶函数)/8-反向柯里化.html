@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+     //鸭子类型：当我们调用对象的某个方法的时候，不用关心对象是否被设计为拥有该方法
+     //只要该方法适用于该对象
+     (function(){
+         Array.prototype.push(arguments,5);
+         console.log(arguments);
+    })(1,2,3,4)
+</script>
+</html>
