@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+     //AOP；把一些根核心业务逻辑无关的部分抽离出来
+     Function.prototype.before = function(fn){
+         var __self = this;
+         return function(){
+              fn.apply(this,arguments);
+              return __self.apply(this,arguments);
+         };
+     }
+
+     Function.prototype.after = function(fn){
+         var __self = this;
+         return function(){
+             var ret = __self.apply(this,arguments);
+             fn.apply(this,arguments);
+             return ret;
+         }
+     }
+
+     var func = function(){
+         console.log(2);
+     };
+
+     var decfunc = func.before(function(){
+         console.log(1);
+     }).after(function(){
+          console.log(3);
+     });
+
+     decfunc()
+
+
+
+</script>
+</html>
