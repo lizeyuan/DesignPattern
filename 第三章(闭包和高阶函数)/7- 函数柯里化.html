@@ -13,15 +13,20 @@
 <script>
      //定义：function currying:又称部分求值，即不会立刻求值，而在需要的时候进行求值
      // 利用闭包保存某些变量
-     var currying = function(){
+
+     var cost = function(){
+         var money = 0;
+         for(var i=0;i<arguments.length;i++){
+             money += arguments[i];
+         }
+         return money
+
+     }
+     var currying = function(fn){
          var args = [];
          return function(){
              if(arguments.length == 0){
-                 var money = 0;
-                 for(var i=0;i<args.length;i++){
-                     money += args[i];
-                 }
-                 return money
+                 return fn.apply(this,args)
              }else{
                  [].push.apply(args,arguments);
                  return arguments.callee;
@@ -30,11 +35,11 @@
 
      }
 
-     var cost = currying();
-     cost(100);
-     cost(200);
-     cost(300);
-     console.log(cost());
+     var result = currying(cost);
+     result(100);
+     result(200);
+     result(300);
+     console.log(result());
 
 </script>
 </html>
