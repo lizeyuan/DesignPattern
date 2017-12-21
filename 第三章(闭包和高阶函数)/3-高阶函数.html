@@ -15,6 +15,21 @@
       // 是指满足下列条件之一的函数:
       //    函数可以作为参数被传递
       //    函数可以作为返回值输出
+      // 高阶函数的应用： 1. 回调函数（异步请求的回调，某些请求提取出来）
+      var appendDiv = function(callback){
+            for(var i = 0;i < 100;i++){
+                var div = document.createElement('div');
+                div.innerHTML = i;
+                document.body.appendChild(div);
+                if(typeof callback == 'function'){
+                     callback(div);
+                }
+            }
+      }
+
+      appendDiv(function(node){
+          node.style.display = 'none';
+      });
 
 </script>
 </html>
