@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+     //定义：function currying:又称部分求值，即不会立刻求值，而在需要的时候进行求值
+     // 利用闭包保存某些变量
+     var currying = function(){
+         var args = [];
+         return function(){
+             if(arguments.length == 0){
+                 var money = 0;
+                 for(var i=0;i<args.length;i++){
+                     money += args[i];
+                 }
+                 return money
+             }else{
+                 [].push.apply(args,arguments);
+                 return arguments.callee;
+             }
+         }
+
+     }
+
+     var cost = currying();
+     cost(100);
+     cost(200);
+     cost(300);
+     console.log(cost());
+
+</script>
+</html>
