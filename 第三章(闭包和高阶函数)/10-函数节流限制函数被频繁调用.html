@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+     /*
+     * 函数节流： 1.定时器清空  2. 第一次执行的时候定时器的避免
+     *
+     * */
+     var throttle = function(fn,internal){
+         var timer=null,firstTime=true;
+         return function(){
+             var _me = this;
+             var args = arguments;
+             if(firstTime){
+                 fn.apply(this,arguments)
+                 firstTime = false;
+             }else{
+                 clearTimeout(timer);
+                 timer = setTimeout(function(){
+                     fn.apply(_me,args)
+                 },internal || 500);
+
+
+             }
+         }
+     }
+
+     var resize = throttle(function(){
+          console.log(1)
+     });
+
+     window.onresize = resize
+</script>
+</html>
