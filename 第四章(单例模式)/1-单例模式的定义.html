@@ -29,6 +29,20 @@
             return this.instance;
       }
 
+      Singleton.getInstanceTwo = (function(name){
+            var instance;
+            return function(){
+                if(!instance){
+                     instance = new Singleton(name);
+                }
+
+                return instance;
+            }
+      })();
+
+      var c = Singleton.getInstanceTwo('hello');
+      var d = Singleton.getInstanceTwo('world');
+      alert(c == d);
       var a = Singleton.getInstance('lzy');
       var b = Singleton.getInstance('yzl');
       alert(a == b);
