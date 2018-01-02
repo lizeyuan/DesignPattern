@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+
+</body>
+<script>
+     //频繁的dom操作(创建1000个dom节点): 分时处理
+     /**
+      * arr:需要处理的数据
+      * fn: 进行的操作
+      * count: 每个时间片处理的数据数目
+      *
+      */
+     function createDiv(n){
+         var oDiv = document.createElement("div");
+         oDiv.innerHTML = n;
+         document.body.appendChild(oDiv);
+     }
+     var timeChunk = function(arr,fn,count){
+          var start = function(){
+              for(var i=0;i<Math.min(count || 1,arr.length);i++){
+                    var obj = arr.shift();
+                    fn(obj);
+              }
+          },timer=null;
+          return function(){
+               timer = setInterval(function(){
+                    if(arr.length == 0){
+                        clearInterval(timer);
+                    }else{
+                        start();
+                    }
+               },200);
+          }
+     }
+
+     var arr = [];
+     for(var i=0;i<1000;i++){
+         arr.push(i);
+     }
+
+     var renderList = timeChunk(arr,createDiv,8);
+     renderList();
+
+</script>
+</html>
